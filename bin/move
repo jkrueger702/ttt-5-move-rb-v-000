@@ -2,11 +2,11 @@
 
 require_relative '../lib/move.rb'
 
+greeting
 board = 'board'
 board = Array.new
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-puts "Welcome to Tic Tac Toe!"
-puts  "Where would you like to go?"
+question
 input = gets.strip
 index = input_to_index(input)
 move(board, index = "X")
