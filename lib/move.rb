@@ -13,19 +13,7 @@ user_input.to_i - 1
 end
 
 def move(board, position, character = "X")
-  board[0] = "X"
+  board[position] = character
 end
 
-def greeting
-  puts "Welcome to Tic Tac Toe!"
-end
 
-def question
-  puts "Where would you like to go?"
-end
-
-def board
-  board = 'board'
-  board = Array.new
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-end
