@@ -1,7 +1,3 @@
-def greeting
-  puts "Welcome to Tic Tac Toe!"
-end
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -11,13 +7,13 @@ def display_board(board)
 end
 
 input = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-def input_to_index(input)
-index = input.to_i - 1
-index
+def input_to_index(user_input)
+user_input.to_i - 1
+
 end
 
-def move(board, input, character = "X")
-  board[input] = character
+def move(board, position, character = "X")
+  board[0] = "X"
 end
 
 def greeting
